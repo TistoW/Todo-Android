@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.tisto.todo.ui.home.HomeFragment"
+        android:name="com.tisto.todo.ui.retrofit.RetrofitFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.tisto.todo.ui.dashboard.DashboardFragment"
+        android:name="com.tisto.todo.ui.room.RoomFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.tisto.todo.ui.notifications.NotificationsFragment"
+        android:name="com.tisto.todo.ui.akun.AkunFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_akun" />
 </navigation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.AppToolbar"
+    app:elevation="0dp"
+    tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="end"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStartWithNavigation="0dp"
+            app:paddingEnd="5dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/btn_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/selesai"
+            android:textAppearance="@style/TypographyStyles.Text2"
+            android:textColor="@color/green_normal"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_toolbarImage"
+                style="@style/image_clickable"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_add_24_grey"
+                android:visibility="gone"
+                app:tint="#515151" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
